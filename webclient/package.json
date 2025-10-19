@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "apigen": "ng-openapi-gen --input http://localhost:3000/docs/json --output src/app/core/api",
     "test": "ng test"
   },
   "prettier": {
@@ -42,6 +43,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-openapi-gen": "^1.0.3",
     "typescript": "~5.9.2"
   }
 }
